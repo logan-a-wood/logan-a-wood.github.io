@@ -28,6 +28,13 @@
   }
 }
 
+[data-mode="gamedev"] {
+  --accent: #4fd1c5;
+  --accent-dim: rgba(79, 209, 197, 0.12);
+  --accent-2: #ffb454;
+  --accent-2-dim: rgba(255, 180, 84, 0.15);
+}
+
 *,
 *::before,
 *::after {

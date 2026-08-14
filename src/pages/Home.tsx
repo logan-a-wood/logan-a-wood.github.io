@@ -1,23 +1,30 @@
 import { Link } from "react-router-dom";
+import { useMode } from "../lib/mode";
 import "./Home.css";
 
+const ROLE = {
+  swe: "Software engineer.",
+  gamedev: "Game developer.",
+} as const;
+
 function Home() {
+  const { mode } = useMode();
+
   return (
     <main className="hero">
       <p className="hero__eyebrow">
-        <span className="prompt">~/logan-wood</span> % whoami
+        <span className="prompt">~/logan-wood</span> % whoami --mode={mode}
         <span className="cursor" aria-hidden="true" />
       </p>
 
       <h1 className="hero__name">Logan Wood</h1>
 
-      <p className="hero__role">Software engineer + game dev.</p>
+      <p className="hero__role">{ROLE[mode]}</p>
 
       <p className="hero__bio">
-        I build reliable systems and clean interfaces for a living, and break
-        things on purpose in Unity for fun. Currently digging into{" "}
-        <span className="accent">shaders</span> and{" "}
-        <span className="accent">tools programming</span>.
+        I'm a CS student and aspiring {" "}
+        <span className="accent">Software Engineer</span> /{" "}
+        <span className="accent">Game Dev</span>.
       </p>
 
       <div className="hero__actions">

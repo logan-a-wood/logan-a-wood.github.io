@@ -53,12 +53,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 16px 32px;
   padding: 28px 48px;
   font-family: var(--mono);
   font-size: 13px;
   letter-spacing: 0.5px;
 
   @media (max-width: 720px) {
+    flex-wrap: wrap;
     padding: 20px 24px;
   }
 }
@@ -145,6 +147,29 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.hud__hint {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  @media (max-width: 720px) {
+    display: none;
+  }
+}
+
+.hud__kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  padding: 2px 5px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-dim);
 }
 
 .hud__dot {

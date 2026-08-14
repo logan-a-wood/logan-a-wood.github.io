@@ -1,0 +1,43 @@
+.mode-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 0.3px;
+}
+
+.mode-toggle__prefix {
+  color: var(--text-dim);
+  text-transform: uppercase;
+}
+
+.mode-toggle__sep {
+  color: var(--text-dim);
+}
+
+.mode-toggle__option {
+  background: transparent;
+  border: none;
+  padding: 2px 4px;
+  color: var(--text-dim);
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  transition: color 0.2s;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--accent-2);
+  }
+
+  &[data-active="true"] {
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--accent-2);
+    outline-offset: 2px;
+  }
+}
