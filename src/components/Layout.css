@@ -125,6 +125,18 @@
   }
 }
 
+ul {
+  list-style-type: "> ";
+}
+
+li {
+  transition: transform 0.3s ease
+}
+
+li:hover {
+  transform: translate(5px, 0px);
+}
+
 .hud {
   display: flex;
   align-items: center;

@@ -1,10 +1,12 @@
 function Contact() {
   return (
     <main className="page-content">
-      <h1 className="page-title">Say hello</h1>
+      <h1 className="page-title">Links to stuff</h1>
       <p className="page-lede">
-        Reach me at{' '}
-        <a href="mailto:you@example.com">you@example.com</a>.
+        <ul>
+          <li><a href="linkedin.com/in/logan-a-wood">LinkedIn</a>.</li>
+          <li><a href="https://github.com/logan-a-wood">GitHub</a>.</li>
+        </ul>
       </p>
     </main>
   )
