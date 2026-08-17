@@ -121,6 +121,13 @@
   }
 }
 
+.route-shell {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  animation: page-enter 260ms ease-out both;
+}
+
 .page-title {
   font-family: var(--sans);
   font-weight: 700;
@@ -247,7 +254,24 @@
   }
 }
 
+@keyframes page-enter {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+    filter: blur(1px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
+  .route-shell {
+    animation: none;
+  }
+
   .nav__links a::after {
     transition: none;
   }

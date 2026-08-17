@@ -1,9 +1,12 @@
-import { Outlet, Link } from "react-router-dom";
+import { Link, useLocation, useOutlet } from "react-router-dom";
 import ModeToggle from "./ModeToggle";
 import CommandPalette from "./CommandPalette";
 import "./Layout.css";
 
 function Layout() {
+  const location = useLocation();
+  const outlet = useOutlet();
+
   return (
     <div className="page">
       <div className="grid-overlay" aria-hidden="true" />
@@ -20,7 +23,9 @@ function Layout() {
         <ModeToggle />
       </header>
 
-      <Outlet />
+      <div key={location.pathname} className="route-shell">
+        {outlet}
+      </div>
 
       <CommandPalette />
 
