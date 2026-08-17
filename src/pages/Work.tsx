@@ -6,19 +6,25 @@ import "./Work.css"
 function Work() {
   const mode = useMode();
 
-  const filteredProjects = projects.filter((p) => p.category == mode.mode);
+  const filteredProjects = projects
+    .filter((project) => project.category === mode.mode)
+    .sort((a, b) => b.year - a.year);
 
   return (
     <main className="page-content">
       <h1 className="page-title">Work</h1>
       <p className="page-lede">
-        Project write-ups are coming soon — engineering work and the game dev
-        side projects both.
+        A filtered view of my {mode.mode === "swe" ? "engineering" : "game dev"}{" "}
+        projects.
       </p>
 
       <div className="work-grid">
-        {filteredProjects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
+        {filteredProjects.map((project, index) => (
+          <ProjectCard
+            key={project.id}
+            project={project}
+            animationDelayMs={index * 90}
+          />
         ))}
       </div>
     </main>

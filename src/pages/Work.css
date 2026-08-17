@@ -1,6 +1,8 @@
 .work-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    align-items: stretch;
     gap: 14px;
-    padding: 16px 0px;
+    width: 100%;
+    padding: 16px 0 24px;
 }
