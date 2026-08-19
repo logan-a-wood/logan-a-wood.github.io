@@ -3,6 +3,7 @@ export interface Project {
     title: string;
     category: "swe" | "gamedev";
     summary: string;
+    details?: string;
     tags: string[];
     month?: number;
     year: number;

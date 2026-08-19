@@ -7,7 +7,8 @@ export const projects: Project[] = [
         id: "rsc",
         title: "React Spectrum Charts Animations",
         category: "swe",
-        summary: "Contributed to Adobe's React Spectrum Charts library by developing an animation system for integrating animations for charts.",
+        summary: "Contributed to Adobe's **React Spectrum Charts** library by developing an animation system for integrating animations for charts.",
+        details: `Researched, prototyped, and implemented a system for animating any element in Adobe's **Reach Spectrum Charts** library. This work was part of a 12-week Software Engineer internship where I worked from the Lehi, UT office on the Workspace UI team.`,
         tags: ["TypeScript", "React", "Internship", "Vega"],
         year: 2026,
         repoUrl: "https://github.com/adobe/react-spectrum-charts",
@@ -17,6 +18,7 @@ export const projects: Project[] = [
         title: "Qt Bartender Simulator",
         category: "swe",
         summary: "Developed a 2D physics-based drink mixing game in a 5-person team as final project for Software Practice 2 class.",
+        details: "For this project, I focused on gameplay systems and team integration points: coordinating physics interactions, implementing UI flow, and collaborating through pull requests and code reviews to keep features mergeable under class deadlines.",
         tags: ["C++", "Qt", "Box2D", "Team", "School"],
         month: 4,
         year: 2025,
@@ -48,8 +50,15 @@ export const projects: Project[] = [
         title: "Quick, Hide the Booze!",
         category: "gamedev",
         summary: "A stylized physics-based comedy game about cleaning up your dorm room after a big party.",
+        details: `
+### The Game
+The Residence Advisor is coming for a random dorm inspection but your place is a mess after last night's party. Quick, hide the booze!
+### My Role
+Served as director and engineer maintaining scope and core loop, coordinating teammates across art and engineering tasks using Agile, and publishing the game on the website Itch.io.
+        `,
         tags: ["Unity", "C#", "Team", "Published", "Director"],
         year: 2026,
+        thumbnail: "../../public/GameArtThumbnail.png",
         liveUrl: "https://meepo-productions.itch.io/quick-hide-the-booze",
     },
     {
