@@ -4,6 +4,7 @@ export interface Project {
     category: "swe" | "gamedev";
     summary: string;
     tags: string[];
+    month?: number;
     year: number;
     thumbnail?: string;
     liveUrl?: string;
