@@ -7,6 +7,7 @@ export const projects: Project[] = [
         id: "rsc",
         title: "React Spectrum Charts Animations",
         category: "swe",
+        featured: true,
         summary: "Contributed to Adobe's **React Spectrum Charts** library by developing an animation system for integrating animations for charts.",
         details: `Researched, prototyped, and implemented a system for animating any element in Adobe's **Reach Spectrum Charts** library. This work was part of a 12-week Software Engineer internship where I worked from the Lehi, UT office on the Workspace UI team.`,
         tags: ["TypeScript", "React", "Internship", "Vega"],
@@ -49,6 +50,7 @@ export const projects: Project[] = [
         id: "quick-hide-the-booze",
         title: "Quick, Hide the Booze!",
         category: "gamedev",
+        featured: true,
         summary: "A stylized physics-based comedy game about cleaning up your dorm room after a big party.",
         details: `
 ### The Game

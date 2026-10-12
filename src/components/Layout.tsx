@@ -1,5 +1,4 @@
 import { Link, useLocation, useOutlet } from "react-router-dom";
-import ModeToggle from "./ModeToggle";
 import CommandPalette from "./CommandPalette";
 import "./Layout.css";
 
@@ -20,7 +19,6 @@ function Layout() {
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
         </nav>
-        <ModeToggle />
       </header>
 
       <div key={location.pathname} className="route-shell">
