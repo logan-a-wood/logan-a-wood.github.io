@@ -58,7 +58,7 @@ Served as director and engineer maintaining scope and core loop, coordinating te
         `,
         tags: ["Unity", "C#", "Team", "Published", "Director"],
         year: 2026,
-        thumbnail: "../../public/GameArtThumbnail.png",
+        thumbnail: "/GameArtThumbnail.png",
         liveUrl: "https://meepo-productions.itch.io/quick-hide-the-booze",
     },
     {
@@ -68,6 +68,7 @@ Served as director and engineer maintaining scope and core loop, coordinating te
         summary: "A stylized level-based puzzle game where you roll around as a cube.",
         tags: ["Unity", "C#", "Solo", "Blender", "Ableton"],
         year: 2021,
+        thumbnail: "/CubeThumbnail.png",
         liveUrl: "https://meepo-productions.itch.io/cube",
         // repoUrl: "https://github.com/logan-a-wood/CUBE",
     },
@@ -78,6 +79,7 @@ Served as director and engineer maintaining scope and core loop, coordinating te
         summary: "A fun multiplayer arena game where you and your friends run around shooting each other.",
         tags: ["Unity", "C#", "Solo", "Blender"],
         year: 2022,
+        thumbnail: "/BlobArenaThumbnail.png",
         liveUrl: "https://meepo-productions.itch.io/blob-arena",
         // repoUrl: "https://github.com/logan-a-wood/Blob-Arena",
     }

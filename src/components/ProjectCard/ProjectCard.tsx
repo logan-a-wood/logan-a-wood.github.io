@@ -20,6 +20,13 @@ function ProjectCard({ project, animationDelayMs = 0, onOpenDetails }: ProjectCa
                 <h2 className="project-card__title">{project.title}</h2>
                 <span className="project-card__year">{project.year}</span>
             </header>
+            {project.thumbnail && (
+                <img
+                    className="project-card__thumbnail"
+                    src={project.thumbnail}
+                    alt={`${project.title} screenshot`}
+                />
+            )}
             <div className="project-card__summary">
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>
                     {project.summary}
