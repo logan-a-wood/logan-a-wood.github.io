@@ -47,6 +47,27 @@ export const projects: Project[] = [
     },
     // GAMES PROJECTS
     {
+        id: "capstone",
+        title: "Capstone Game",
+        category: "gamedev",
+        featured: true,
+        summary: "An accessibility-forward 3D FPS game. Created in by a 14-person team.",
+        details: `
+### The Game
+An accessibility-forward 3D FPS game.
+### My Role
+Lead engineer in the 14-person multidisciplinary team, running weekly engineering meetings for with 2 other engineers and managing an Agile task board with ClickUp. Besides my managerial roles, I technical contributions on the team include:
+- FPS player controller 
+- 4 enemy AI behaviors
+- Weapon system -> grenade launcher weapon type
+- Control rebind menu
+- Object pooling    
+        `,
+        tags: ["Unity", "C#", "Team", "Lead", "Engineer"],
+        year: 2026,
+        // liveUrl: "https://meepo-productions.itch.io/quick-hide-the-booze",
+    },
+    {
         id: "quick-hide-the-booze",
         title: "Quick, Hide the Booze!",
         category: "gamedev",
